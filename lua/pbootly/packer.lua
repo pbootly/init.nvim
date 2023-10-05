@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use({ 'rose-pine/neovim', as = 'rose-pine' })
+    use {'folke/tokyonight.nvim', as = 'tokyonight'}
     use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
@@ -25,8 +25,6 @@ return require('packer').startup(function(use)
 	use("tpope/vim-fugitive")
 
 	use("github/copilot.vim")
-
-    use("faith/vim-go")
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
