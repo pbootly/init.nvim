@@ -1,6 +1,7 @@
 return {
-	"getomni/neovim",
+	"ellisonleao/gruvbox.nvim",
 	config = function()
-		vim.cmd("colorscheme omni")
+		vim.cmd("colorscheme gruvbox")
+        vim.o.background = "dark"
 	end
 }
