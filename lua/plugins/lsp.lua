@@ -35,9 +35,9 @@ return {
       cmp.setup({
         formatting = lsp_zero.cmp_format({details = true}),
         mapping = cmp.mapping.preset.insert({
-                    ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
-                    ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
-                    ['<C-l>'] = cmp.mapping.confirm({ select = true }),
+                    ['<C-j>'] = cmp.mapping.select_prev_item(cmp_select),
+                    ['<C-k>'] = cmp.mapping.select_next_item(cmp_select),
+                    ['<C-l'] = cmp.mapping.confirm({ select = true }),
                     ["<C-Space>"] = cmp.mapping.complete(),
                 }),
         snippet = {
@@ -80,7 +80,6 @@ return {
 
       require('mason-lspconfig').setup({
         ensure_installed = {
-            'tsserver',
             'rust_analyzer',
             'gopls',
         },
