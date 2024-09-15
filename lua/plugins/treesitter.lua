@@ -5,7 +5,7 @@ return {
 		require("nvim-treesitter.configs").setup({
 			highlight = { enable = true },
 			indent = { enable = true },
-			ensure_installed = { "rust", "go", "c", "lua", "vim", "vimdoc", "query" },
+			ensure_installed = { "rust", "jsonc", "go", "c", "lua", "vim", "vimdoc", "query" },
 			auto_install = true,
 		})
 	end
