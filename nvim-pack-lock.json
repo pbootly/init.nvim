@@ -21,6 +21,10 @@
       "rev": "ce6749e4c3a842679cc302ce1c2db76c2d07f700",
       "src": "https://github.com/zootedb0t/citruszest.nvim"
     },
+    "conform.nvim": {
+      "rev": "5420c4b5ea0aeb99c09cfbd4fd0b70d257b44f25",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
     "fidget.nvim": {
       "rev": "64463022a1f2ff1318ab22a2ea4125ed9313a483",
       "src": "https://github.com/j-hui/fidget.nvim"

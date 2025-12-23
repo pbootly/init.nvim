@@ -9,6 +9,7 @@ vim.pack.add({
 	"https://github.com/moyiz/blink-emoji.nvim",
 	"https://github.com/mikavilpas/blink-ripgrep.nvim",
 	"https://github.com/L3MON4D3/LuaSnip",
+	"https://github.com/stevearc/conform.nvim",
 	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("^1") },
 })
 
