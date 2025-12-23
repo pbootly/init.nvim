@@ -45,6 +45,10 @@
       "rev": "fe7cfe9800a182274d0f868a74b7263b8c0c020b",
       "src": "https://github.com/folke/snacks.nvim"
     },
+    "toggleterm.nvim": {
+      "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
+      "src": "https://github.com/akinsho/toggleterm.nvim"
+    },
     "undotree": {
       "rev": "0f1c9816975b5d7f87d5003a19c53c6fd2ff6f7f",
       "src": "https://github.com/mbbill/undotree"
