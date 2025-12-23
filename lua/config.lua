@@ -1,3 +1,4 @@
+-- Oil for file management
 require("oil").setup({
   default_file_explorer = true,
   view_options = {
@@ -8,6 +9,7 @@ require("oil").setup({
   },
 })
 
+-- Keymaps and terminal
 vim.keymap.set("n", "-", vim.cmd.Oil)
 vim.keymap.set("n", "<leader>|", function()
   vim.cmd("vs")
@@ -17,12 +19,21 @@ vim.keymap.set("n", "<leader>-", function()
   vim.cmd("sp")
 end)
 
-require("toggleterm").setup()
+require("toggleterm").setup({
+  on_open = function(term)
+    vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { buffer = term.bufnr })
+  end,
+})
 vim.keymap.set("n", "<leader>tt", function()
   vim.cmd("ToggleTerm")
 end)
 
+-- clipboard to system
+vim.opt.clipboard = "unnamedplus"
+
+-- colorscheme and general settings
 vim.cmd("colorscheme citruszest")
+vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#3a3a3a" })
 vim.opt.colorcolumn = "80"
 vim.opt.relativenumber = true
 
