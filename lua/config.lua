@@ -15,6 +15,9 @@ end)
 vim.keymap.set("n", "<leader>-", function()
 	vim.cmd("sp")
 end)
+vim.keymap.set("n", "<leader>tt", function()
+	Snacks.terminal.open(cmd, opts)
+end)
 
 vim.cmd("colorscheme citruszest")
 vim.opt.colorcolumn = "80"
