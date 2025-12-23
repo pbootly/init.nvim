@@ -16,4 +16,3 @@ vim.pack.add({
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 require("config")
-require("keymaps")
