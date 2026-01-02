@@ -9,6 +9,8 @@ local wanted = {
   "yamlfix",
   "stylua",
   "ols",
+  "rust-analyzer",
+  "rustfmt",
 }
 for _, name in ipairs(wanted) do
   local ok, pkg = pcall(registry.get_package, name)
@@ -77,6 +79,7 @@ c.setup({
 
   formatters_by_ft = {
     go = { "gofumpt" },
+    rust = { "rustfmt" },
     lua = { "stylua" },
     terraform = { "terraform_fmt" },
     yaml = { "yamlfix" },
