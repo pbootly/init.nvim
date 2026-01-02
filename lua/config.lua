@@ -20,6 +20,9 @@ vim.keymap.set("n", "<leader>-", function()
 end)
 
 require("toggleterm").setup({
+  size = function()
+    return math.floor(vim.o.lines * 0.5)
+  end,
   on_open = function(term)
     vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { buffer = term.bufnr })
   end,
