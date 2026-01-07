@@ -7,7 +7,6 @@ vim.pack.add({
   "https://github.com/mikavilpas/blink-ripgrep.nvim",
   "https://github.com/L3MON4D3/LuaSnip",
   "https://github.com/stevearc/conform.nvim",
-  "https://github.com/moyiz/blink-emoji.nvim",
   { src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("^1") },
   "https://github.com/akinsho/toggleterm.nvim",
 })
