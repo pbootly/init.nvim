@@ -35,13 +35,7 @@ end)
 vim.opt.clipboard = "unnamedplus"
 
 -- colorscheme and general settings
-vim.o.background = "light"
-require("everforest").setup({
-  background = "soft", -- soft | medium | hard
-  transparent_background_level = 0,
-})
-
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme tempus_spring")
 vim.opt.colorcolumn = "80"
 vim.opt.relativenumber = true
 
