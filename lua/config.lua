@@ -35,8 +35,7 @@ end)
 vim.opt.clipboard = "unnamedplus"
 
 -- colorscheme and general settings
-vim.cmd("colorscheme citruszest")
-vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#3a3a3a" })
+vim.cmd("colorscheme tempus_spring")
 vim.opt.colorcolumn = "80"
 vim.opt.relativenumber = true
 

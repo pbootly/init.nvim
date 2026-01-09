@@ -52,20 +52,12 @@ require("blink.cmp").setup({
     },
   },
   sources = {
-    default = { "lsp", "snippets", "path", "buffer", "ripgrep", "emoji" },
+    default = { "lsp", "snippets", "path", "buffer", "ripgrep" },
     providers = {
       ripgrep = {
         module = "blink-ripgrep",
         name = "Ripgrep",
         opts = {},
-      },
-      emoji = {
-        module = "blink-emoji",
-        name = "Emoji",
-        score_offset = 0,
-        opts = {
-          insert = true,
-        },
       },
     },
   },

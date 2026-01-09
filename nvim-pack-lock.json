@@ -45,6 +45,10 @@
       "rev": "fe7cfe9800a182274d0f868a74b7263b8c0c020b",
       "src": "https://github.com/folke/snacks.nvim"
     },
+    "tempus-themes-vim": {
+      "rev": "b720ee2d4c5588b5a27bb3544d3ded5ee1acab45",
+      "src": "https://github.com/protesilaos/tempus-themes-vim"
+    },
     "toggleterm.nvim": {
       "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
       "src": "https://github.com/akinsho/toggleterm.nvim"
