@@ -25,6 +25,8 @@ require("toggleterm").setup({
   end,
   on_open = function(term)
     vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { buffer = term.bufnr })
+
+    vim.wo[term.window].winhighlight = "Normal:NormalFloat,NormalNC:NormalFloat,FloatBorder:FloatBorder"
   end,
 })
 vim.keymap.set("n", "<leader>tt", function()
