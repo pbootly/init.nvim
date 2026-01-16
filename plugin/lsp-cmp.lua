@@ -11,6 +11,8 @@ local wanted = {
   "ols",
   "rust-analyzer",
   "rustfmt",
+  "python-lsp-server",
+  "black",
 }
 for _, name in ipairs(wanted) do
   local ok, pkg = pcall(registry.get_package, name)
@@ -78,6 +80,7 @@ c.setup({
     sh = { "shfmt" },
     bash = { "shfmt" },
     json = { "jq" },
+    python = { "black" },
   },
   -- formatters = {
   -- },

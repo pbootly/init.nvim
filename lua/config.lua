@@ -39,9 +39,9 @@ vim.opt.clipboard = "unnamedplus"
 -- colorscheme and general settings
 vim.keymap.set("n", "<leader>bs", function()
   if vim.o.background == "dark" then
-    vim.o.background = "light"
-  else
-    vim.o.background = "dark"
+    -- vim.o.background = "light"
+    -- else
+    -- vim.o.background = "dark"
   end
 end, { desc = "Toggle background (dark/light)" })
 vim.cmd("colorscheme kanagawa")
