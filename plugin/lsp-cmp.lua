@@ -11,7 +11,7 @@ local wanted = {
   "ols",
   "rust-analyzer",
   "rustfmt",
-  "python-lsp-server",
+  "pyright",
   "black",
 }
 for _, name in ipairs(wanted) do
@@ -88,6 +88,6 @@ c.setup({
     if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
       return nil
     end
-    return { timeout_ms = 500, lsp_fallback = true }
+    return { timeout_ms = 10000, lsp_fallback = true }
   end,
 })
