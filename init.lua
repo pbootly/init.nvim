@@ -10,6 +10,7 @@ vim.pack.add({
   { src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("^1") },
   "https://github.com/akinsho/toggleterm.nvim",
   "https://github.com/nvim-lualine/lualine.nvim",
+  "https://github.com/mfussenegger/nvim-ansible",
 })
 
 vim.g.mapleader = " "

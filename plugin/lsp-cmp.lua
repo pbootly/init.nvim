@@ -13,6 +13,10 @@ local wanted = {
   "rustfmt",
   "pyright",
   "black",
+  "ansible-language-server",
+  "ansible-lint",
+  "clangd",
+  "clang-format",
 }
 for _, name in ipairs(wanted) do
   local ok, pkg = pcall(registry.get_package, name)
@@ -81,9 +85,17 @@ c.setup({
     bash = { "shfmt" },
     json = { "jq" },
     python = { "black" },
+    c = { "clang-format" },
   },
-  -- formatters = {
-  -- },
+  formatters = {
+    yamlfix = {
+      env = {
+        YAMLFIX_WHITELINES = "1",
+        YAMLFIX_COMMENTS_WHITELINES = "1",
+        YAMLFIX_LINE_LENGTH = "200",
+      },
+    },
+  },
   format_on_save = function(bufnr)
     if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
       return nil
