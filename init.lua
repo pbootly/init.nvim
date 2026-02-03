@@ -11,6 +11,8 @@ vim.pack.add({
   "https://github.com/akinsho/toggleterm.nvim",
   "https://github.com/nvim-lualine/lualine.nvim",
   "https://github.com/mfussenegger/nvim-ansible",
+  "https://github.com/Lommix/godot.nvim",
+  "https://github.com/mfussenegger/nvim-dap",
 })
 
 vim.g.mapleader = " "

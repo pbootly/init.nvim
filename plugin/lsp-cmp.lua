@@ -17,6 +17,7 @@ local wanted = {
   "ansible-lint",
   "clangd",
   "clang-format",
+  "gdtoolkit",
 }
 for _, name in ipairs(wanted) do
   local ok, pkg = pcall(registry.get_package, name)
@@ -103,3 +104,43 @@ c.setup({
     return { timeout_ms = 10000, lsp_fallback = true }
   end,
 })
+
+-- Godot DAP
+local dap = require("dap")
+
+dap.adapters.godot = function(callback, _)
+  callback({
+    type = "server",
+    host = "127.0.0.1",
+    port = 6006, -- must match Godot debug port
+  })
+end
+
+dap.configurations.gdscript = {
+  {
+    type = "godot",
+    request = "launch",
+    name = "Attach to Godot",
+    project = "${workspaceFolder}", -- optional, for clarity
+  },
+}
+
+vim.api.nvim_create_user_command("GodotDebug", function()
+  dap.continue()
+end, {})
+
+vim.api.nvim_create_user_command("GodotBreakAtCursor", function()
+  dap.toggle_breakpoint()
+end, {})
+
+vim.api.nvim_create_user_command("GodotStep", function()
+  dap.step_over()
+end, {})
+
+vim.api.nvim_create_user_command("GodotContinue", function()
+  dap.continue()
+end, {})
+
+vim.api.nvim_create_user_command("GodotQuit", function()
+  dap.terminate()
+end, {})
