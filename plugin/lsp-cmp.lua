@@ -18,6 +18,7 @@ local wanted = {
   "clangd",
   "clang-format",
   "gdtoolkit",
+  "omnisharp",
 }
 for _, name in ipairs(wanted) do
   local ok, pkg = pcall(registry.get_package, name)
@@ -87,6 +88,7 @@ c.setup({
     json = { "jq" },
     python = { "black" },
     c = { "clang-format" },
+    -- cs = { "clang-format" },
   },
   formatters = {
     yamlfix = {

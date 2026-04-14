@@ -13,6 +13,7 @@ vim.pack.add({
   "https://github.com/mfussenegger/nvim-ansible",
   "https://github.com/Lommix/godot.nvim",
   "https://github.com/mfussenegger/nvim-dap",
+  "https://github.com/atiladefreitas/dooing",
 })
 
 vim.g.mapleader = " "
