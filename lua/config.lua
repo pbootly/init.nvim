@@ -19,6 +19,19 @@ vim.keymap.set("n", "<leader>-", function()
   vim.cmd("sp")
 end)
 
+-- Diffview
+require("Diffview").setup({
+  use_icons = false,
+})
+vim.keymap.set("n", "<leader>dvo", function()
+  vim.cmd("DiffviewOpen")
+end)
+
+vim.keymap.set("n", "<leader>dvc", function()
+  vim.cmd("DiffviewClose")
+end)
+
+-- terminal
 require("toggleterm").setup({
   size = function()
     return math.floor(vim.o.lines * 0.5)

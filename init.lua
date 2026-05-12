@@ -14,6 +14,7 @@ vim.pack.add({
   "https://github.com/Lommix/godot.nvim",
   "https://github.com/mfussenegger/nvim-dap",
   "https://github.com/atiladefreitas/dooing",
+  "https://github.com/sindrets/diffview.nvim",
 })
 
 vim.g.mapleader = " "
