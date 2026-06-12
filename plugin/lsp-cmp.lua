@@ -10,7 +10,6 @@ local wanted = {
   "stylua",
   "ols",
   "rust-analyzer",
-  "rustfmt",
   "pyright",
   "black",
   "ansible-language-server",
